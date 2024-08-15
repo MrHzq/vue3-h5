@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import { localeTranslate } from './business/lang'
 </script>
 
 <template>
@@ -9,7 +10,8 @@ import HelloWorld from './components/HelloWorld.vue'
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-      <div>{{ $t('aa.bb') }}</div>
+      <div>{{ localeTranslate('aa.cc', { day: 4 }) }}</div>
+      <div>{{ localeTranslate('aa.dd') }}</div>
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
