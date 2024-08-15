@@ -1,0 +1,23 @@
+{
+  "ar": {
+    "aa": {
+      "bb": "ar bb",
+      "cc": "ar cc",
+      "dd": "ar dd"
+    }
+  },
+  "en": {
+    "aa": {
+      "bb": "en bb",
+      "cc": "en cc",
+      "dd": "en dd"
+    }
+  },
+  "zh-CN": {
+    "aa": {
+      "bb": "zh-CN bb",
+      "cc": "zh-CN cc",
+      "dd": "zh-CN dd"
+    }
+  }
+}
