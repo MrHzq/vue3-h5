@@ -34,3 +34,21 @@ const i18n = createI18n({
 })
 
 export default i18n
+
+type LocaleTree = typeof langs.en
+type StringAppend<T, S> = T extends string ? (S extends string ? `${T}.${S}` : never) : never
+type KeyTree<T extends Record<string, any>> = {
+  [K in keyof T]: T[K] extends string ? K : StringAppend<K, keyof T[K]>
+}
+export type LocaleKeyTree = KeyTree<LocaleTree>
+
+/**
+ * 语言转化方法
+ * @param key 要转换的key，eg: aa.bb
+ * @param variables 提供的变量，eg: { day: 4 }
+ * @returns string
+ */
+export const localeTranslate = (
+  key: LocaleKeyTree[keyof LocaleKeyTree],
+  variables: { [key: string]: any } = {}
+) => i18n.global.t(key, variables)
