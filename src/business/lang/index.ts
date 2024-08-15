@@ -19,6 +19,9 @@ const query = () => {
 
 const { languageCode } = query()
 
+console.log('[ url languageCode ] >', languageCode)
+console.log('[ localStorage languageCode ] >', localStorage.getItem('SYSTEM_LANGUAGE'))
+
 // 优先使用链接上的、localStorage、默认的
 const locale = languageCode || localStorage.getItem('SYSTEM_LANGUAGE') || 'en'
 
