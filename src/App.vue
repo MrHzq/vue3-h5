@@ -9,6 +9,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
+      <div>{{ $t('aa.bb') }}</div>
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
