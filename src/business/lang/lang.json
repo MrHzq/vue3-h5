@@ -2,21 +2,24 @@
   "ar": {
     "aa": {
       "bb": "مرحبا",
-      "cc": "العد التنازلي {day} أيام .",
+      "cc1": "العد التنازلي {day} أيام .",
+      "cc2": "العد التنازلي #day# أيام .",
       "dd": "مع السلامة"
     }
   },
   "en": {
     "aa": {
       "bb": "welcome",
-      "cc": "countdown {day} day(s)",
+      "cc1": "countdown {day} day(s)",
+      "cc2": "countdown #day# day(s)",
       "dd": "goodbye"
     }
   },
   "zh-CN": {
     "aa": {
       "bb": "欢迎",
-      "cc": "倒计时 {day} 天",
+      "cc1": "倒计时 {day} 天",
+      "cc2": "倒计时 #day# 天",
       "dd": "再见"
     }
   }
