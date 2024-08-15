@@ -1,7 +1,26 @@
 import { createI18n } from 'vue-i18n'
 import langs from './lang.json'
 
-const locale = 'en'
+const query = () => {
+  const q = {} as Record<string, any>
+  const { search } = location
+
+  if (search) {
+    return search
+      .slice(1)
+      .split('&')
+      .reduce((_q, item) => {
+        const [key, val] = item.split('=')
+        _q[key] = val
+        return _q
+      }, q)
+  } else return q
+}
+
+const { languageCode } = query()
+
+// 优先使用链接上的、localStorage、默认的
+const locale = languageCode || localStorage.getItem('SYSTEM_LANGUAGE') || 'en'
 
 const i18n = createI18n({
   locale, // 当前显示的语言
