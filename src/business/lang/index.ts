@@ -52,3 +52,18 @@ export const localeTranslate = (
   key: LocaleKeyTree[keyof LocaleKeyTree],
   variables: { [key: string]: any } = {}
 ) => i18n.global.t(key, variables)
+
+/**
+ * 语言转化方法 - 自定义格式的变量转换
+ * @param key 要转换的key，eg: aa.bb
+ * @param variables 提供的变量，eg: { day: 4 }
+ * @returns string
+ */
+export const localeTranslateWithVariables = (
+  key: LocaleKeyTree[keyof LocaleKeyTree],
+  variables: { [key: string]: any }
+): string => {
+  let langStr = localeTranslate(key)
+  for (const key in variables) langStr = langStr.replace(`#${key}#`, variables[key])
+  return langStr
+}
