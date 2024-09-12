@@ -4,8 +4,8 @@ export const THEME_KEY = 'theme'
 
 export const getTheme = () => document.documentElement.getAttribute('data-theme') as Theme
 
-export const setTheme = (theme: Theme = 'light') => {
-  document.documentElement.setAttribute('data-theme', theme)
+export const setTheme = (theme: Theme) => {
+  document.documentElement.setAttribute('data-theme', theme || 'light')
 }
 
 export const initTheme = (_theme?: Theme) => {
