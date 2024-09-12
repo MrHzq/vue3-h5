@@ -13,6 +13,9 @@ import { localeTranslate, localeTranslateWithVariables } from './business/lang'
       <div>{{ localeTranslateWithVariables('aa.cc2', { day: 4 }) }}</div>
       <div>{{ localeTranslate('aa.dd') }}</div>
 
+      <el-button>el button</el-button>
+      <el-tag>el tag</el-tag>
+
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
