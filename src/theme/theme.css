@@ -1,0 +1,10 @@
+:root,
+[data-theme='light'] {
+  --wxh5-common-bg-color: #fff;
+  --wxh5-common-color: #000;
+}
+
+[data-theme='dark'] {
+  --wxh5-common-bg-color: #000;
+  --wxh5-common-color: #fff;
+}
