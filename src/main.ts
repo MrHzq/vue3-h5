@@ -9,8 +9,9 @@ import App from './App.vue'
 import router from './router'
 // import i18n from './business/lang'
 
+import './styles/element/index.scss'
 import ElementPlus from 'element-plus'
-import 'element-plus/dist/index.css'
+// import 'element-plus/dist/index.css'
 
 initTheme()
 const app = createApp(App)
