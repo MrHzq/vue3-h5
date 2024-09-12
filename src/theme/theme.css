@@ -6,5 +6,8 @@
 
 :root[data-theme='dark'] {
   --wxh5-common-bg-color: #000;
-  --wxh5-common-color: #fff;
+  --wxh5-common-color: #cfd3dc;
+
+  --el-text-color-regular: var(--wxh5-common-color);
+  --el-fill-color-blank: transparent;
 }

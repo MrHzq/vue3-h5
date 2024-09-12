@@ -16,6 +16,8 @@ import { localeTranslate, localeTranslateWithVariables } from './business/lang'
       <div>
         <el-button>el button</el-button>
         <el-button type="primary">el button</el-button>
+        <el-button type="success">el button</el-button>
+        <el-button type="danger">el button</el-button>
         <el-tag>el tag</el-tag>
       </div>
 
